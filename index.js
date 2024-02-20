@@ -16,9 +16,9 @@ const initializeServer = async () => {
 
     await affinidiProvider(app, {
         id: "affinidi",
-        issuer: process.env.AFFINIDI_ISSUER,
-        client_id: process.env.AFFINIDI_CLIENT_ID,
-        client_secret: process.env.AFFINIDI_CLIENT_SECRET,
+        issuer: "https://bbec0077-fdd8-4ae2-9440-57fcb2187e25.apse1.login.affinidi.io",
+        client_id: "ed24f38f-c29d-4974-a8f3-b90eb1eea051",
+        client_secret: "XPAiALdnbYIT7LxIl..3A6DeYK",
         redirect_uris: ['https://affinidi-frontend.vercel.app/auth/callback'], 
         handleCredential: (credential) => {
             console.log('Received credential:', credential);
